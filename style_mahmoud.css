@@ -383,12 +383,11 @@ label {
     background-color: #45a049;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     transform: translateY(-4px);
-}
-
-@media screen and (max-width: 600px) {
+ }
+ @media screen and (max-width: 800px) {
     #header h1 {
-        font-size: 40px;
-        margin-bottom: 15px;
+        font-size: 65px;
+        margin-bottom: 20px;
         padding: 10px;
     }
 
@@ -396,15 +395,15 @@ label {
         flex-direction: row;
         justify-content: center;
         flex-wrap: wrap;
-        gap: 10px;
+        gap: 15px;
     }
 
     .nav-link img {
-        transform: scale(0.8);
+        transform: scale(0.85);
     }
 
     .nav-link {
-        font-size: 18px;
+        font-size: 20px;
     }
 
     #content-wrapper1 {
@@ -412,49 +411,68 @@ label {
         flex-direction: column;
         align-items: center;
         text-align: center;
+        gap: 20px;
+        width: 100%;
+        max-width: 90%;
+        margin: 0 auto;
     }
 
     #photo1 {
+        order: -1;
         width: 100%;
         text-align: center;
     }
 
     #photo1 img {
         max-width: 100%;
+        min-width: 280px;
         height: auto;
         display: block;
-        margin: 0 auto 15px;
+        margin: 0 auto;
     }
 
     .content1 {
-        width: 90%;
-        padding: 15px;
+        width: 100%;
+        max-width: 90%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        word-wrap: break-word;
+        visibility: visible;
+        opacity: 1;
     }
 
     .content1 p {
-        font-size: 20px;
-        line-height: 1.5;
+        font-size: 22px;
+        line-height: 1.8;
+        visibility: visible;
     }
 
     .contact-info-box {
+        display: flex;
         flex-direction: column;
-        gap: 10px;
-        padding: 10px;
+        align-items: center;
+        gap: 15px;
+        padding: 15px;
         width: 90%;
     }
 
     .contact-item {
+        display: flex;
+        align-items: center;
         justify-content: center;
+        gap: 10px;
     }
 
     .contact-icon {
-        width: 30px;
-        height: 30px;
+        width: 35px;
+        height: 35px;
     }
 
     .contact-item a {
-        font-size: 16px;
+        font-size: 18px;
     }
 }
 
-        
