@@ -24,7 +24,7 @@ html, body {
     text-align: center;
     border-radius: 10px;
     color: #333333;
-    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
 
 /* styling the writing of my name */
@@ -80,7 +80,7 @@ html, body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
 
 /* all website footer */
@@ -137,11 +137,12 @@ html, body {
     flex-wrap: wrap;
 }
 .content1 p {
-    font-size:clamp(20px, 6vw, 38px);
+    font-size: clamp(16px, 6vw, 38px);
     font-family: 'Times New Roman', Times, serif;
     text-align: left;
     word-wrap: break-word; 
     overflow-wrap: break-word;
+
 }
 
 /* this is the end of styling the main page */
@@ -262,7 +263,7 @@ main {
     border: 3px solid #697e94;
 }
 
-/* the texts */
+/* النصوص */
 .text-container {
     border: 1px solid #697e94;
     color: #252424;
@@ -271,7 +272,7 @@ main {
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
     line-height: 1.5;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
     
 }
 
@@ -281,7 +282,7 @@ p {
     font-size: 16px;
     margin-top: 10px;
     white-space: pre-line;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
 
 
@@ -385,7 +386,7 @@ label {
     transform: translateY(-4px);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
 
         #header h1 {
             font-size: 75px; 
@@ -407,37 +408,8 @@ label {
             font-size: 16px;
         }
         
-    }   
-    
-    @media screen and (max-width: 600px) {
-        #content-wrapper1 {
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-        }
-    
-        #photo1 {
-            width: 100%;
-            text-align: center;
-        }
-    
-        #photo1 img {
-            max-width: 80%;
-            height: auto;
-        }
-    
-        .content1 {
-            width: 90%;
-            height: auto;
-            padding: 15px;
-        }
-    
-        .content1 p {
-            font-size: 18px;
-        }
-    }
-    
-        @media screen and (max-width: 600px) {
+    }    
+        @media screen and (max-width: 768px) {
             .contact-info-box {
                 flex-direction: column;
                 gap: 10px;
