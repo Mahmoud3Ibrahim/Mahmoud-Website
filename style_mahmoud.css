@@ -386,99 +386,75 @@ label {
 }
 
 @media screen and (max-width: 600px) {
+    #header h1 {
+        font-size: 40px;
+        margin-bottom: 15px;
+        padding: 10px;
+    }
 
-        #header h1 {
-            font-size: 75px; 
-            margin-bottom: 20px;
-            padding: 10px;
-        }
-    
-        .nav-menu {
-            flex-direction: row; 
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 15px;
-        }
-    
-        .nav-link img {
-            transform: scale(0.7);
-        }
-        .nav-link {
-            font-size: 16px;
-        }
-        
-    }   
-    
- @media screen and (max-width: 600px) {
+    .nav-menu {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
 
-            #header h1 {
-                font-size: 75px; 
-                margin-bottom: 20px;
-                padding: 10px;
-            }
-        
-            .nav-menu {
-                flex-direction: row; 
-                justify-content: center;
-                flex-wrap: wrap;
-                gap: 15px;
-            }
-        
-            .nav-link img {
-                transform: scale(0.7);
-            }
-            .nav-link {
-                font-size: 16px;
-            }
-            
-        }   
-        
-        @media screen and (max-width: 600px) {
-            #content-wrapper1 {
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-            }
-        
-            #photo1 {
-                width: 100%;
-                text-align: center;
-            }
-        
-            #photo1 img {
-                max-width: 80%;
-                height: auto;
-            }
-        
-            .content1 {
-                width: 90%;
-                height: auto;
-                padding: 15px;
-            }
-        
-            .content1 p {
-                font-size: 18px;
-            }
-        }
-        
-            @media screen and (max-width: 600px) {
-                .contact-info-box {
-                    flex-direction: column;
-                    gap: 10px;
-                    padding: 10px;
-                    width: 90%;
-                }
-                .contact-item {
-                    justify-content: center;
-                }
-            
-                .contact-icon {
-                    width: 25px;
-                    height: 25px;
-                }
-            
-                .contact-item a {
-                    font-size: 14px;
-                }
-            }
+    .nav-link img {
+        transform: scale(0.8);
+    }
+
+    .nav-link {
+        font-size: 18px;
+    }
+
+    #content-wrapper1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #photo1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    #photo1 img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto 15px;
+    }
+
+    .content1 {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .content1 p {
+        font-size: 20px;
+        line-height: 1.5;
+    }
+
+    .contact-info-box {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+        width: 90%;
+    }
+
+    .contact-item {
+        justify-content: center;
+    }
+
+    .contact-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .contact-item a {
+        font-size: 16px;
+    }
+}
+
         
