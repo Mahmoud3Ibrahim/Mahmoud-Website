@@ -1,59 +1,61 @@
 <!DOCTYPE html>
-<!-- Name: Mahmoud Ibrahim 
-    StudentId: 041163059
-    File Name: index.html
-    Date Created: 24-2-2025
-    Task Name: Assignment 01
-    Description: This is Training for CSS and HTML
--->
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Assignment01 home page">
-    <title>Mahmoud Ibrahim - Personal Website</title>
-    <link rel="stylesheet" type="text/css" href="./style_mahmoud.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mahmoud Ibrahim's Personal Portfolio">
+    <title>Mahmoud Ibrahim - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body id="body">
-    <header id="header">
-        <h1>Mahmoud Ibrahim</h1>
+<body>
+    <header>
         <nav class="nav-menu">
-            <a href="index.html" class="nav-link">
-                <img src="image/icons/home.png" alt="Home icon">
-                <span>Home</span>
-            </a>
-            <a href="resume.html" class="nav-link">
-                <img src="image/icons/resume.png" alt="Resume icon">
-                <span>Resume</span>
-            </a>
-            <a href="projects.html" class="nav-link">
-                <img src="image/icons/projects.png" alt="Projects icon">
-                <span>Projects</span>
-            </a>
-            <a href="contact.html" class="nav-link">
-                <img src="image/icons/contact.png" alt="Contact icon">
-                <span>Contact</span>
-            </a>
+            <a href="index.html"><h1>Mahmoud Ibrahim</h1></a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">
+                    <img src="image/icons/home.png" alt="Home icon">
+                    Home
+                </a>
+                <a href="resume.html" class="nav-link">
+                    <img src="image/icons/resume.png" alt="Resume icon">
+                    Resume
+                </a>
+                <a href="projects.html" class="nav-link">
+                    <img src="image/icons/projects.png" alt="Projects icon">
+                    Projects
+                </a>
+                <a href="read_my_story.html" class="nav-link">
+                    <img src="image/icons/read.png" alt="Story icon">
+                    My Journey
+                </a>
+                <a href="certificates.html" class="nav-link">
+                    <img src="image/icons/certificates.png" alt="Certificates icon">
+                    Certificates
+                </a>
+                <a href="contact.html" class="nav-link">
+                    <img src="image/icons/contact.png" alt="Contact icon">
+                    Contact Me
+                </a>
+            </div>
         </nav>
     </header>
 
-    
     <div class="container">
-        <div class="image-box">
-            <img src="image/Mahmoud_Ibrahim.jpg" alt="Mahmoud Hassan Ibrahim">
-        </div>
-        <div class="text-box">
-            <p>My name is <strong>Mahmoud Ibrahim</strong>. I just moved to Canada with my family to give our daughter a better future.</p>
-            <p>I'm starting a new career by studying <strong><a href="https://www.algonquincollege.com/sat/program/computer-programming/" target="_blank" rel="noopener noreferrer">Computer Programming</a></strong> at <a href="https://www.algonquincollege.com" target="_blank" rel="noopener noreferrer">Algonquin College</a>.</p>
-            <p>I'm excited you are here discovering my website.</p>
-        </div>
+        <section class="hero">
+            <div class="hero-text">
+                <h2>Hello, I'm Mahmoud</h2>
+                <p>I'm a Computer Programming student at Algonquin College, passionate about building reliable software with Java, SQL, and web technologies. With a background in data analysis and visualization, I bring a unique perspective to coding, focusing on clean code and user-centric solutions.</p>
+                <a href="resume.html" class="cta-button">Explore My Resume</a>
+            </div>
+            <div class="hero-image">
+                <img id="profile-image" src="image/Mahmoud_Ibrahim01.jpg" alt="Mahmoud Ibrahim">
+            </div>
+        </section>
     </div>
-    
 
-
-    <footer id="footer">
-        <p class="author-line">© 2025 Mahmoud Ibrahim.</p>
+    <footer>
+        <p>© 2025 Mahmoud Ibrahim. All rights reserved.</p>
     </footer>
-
+    <script src="script.js"></script>
 </body>
 </html>

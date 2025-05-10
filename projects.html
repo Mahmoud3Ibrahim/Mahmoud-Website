@@ -1,114 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="description" content="Assignment01 home page">
-        <title>Mahmoud Ibrahim Website</title>
-        <link rel="stylesheet" type="text/css" href="./style_mahmoud.css">
-    </head>
-    <body id="body">
-        <header id="header">
-            <h1>Mahmoud Ibrahim</h1>
-            <nav class="nav-menu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mahmoud Ibrahim's Projects">
+    <title>Mahmoud Ibrahim - Projects</title>
+    <link rel="stylesheet" href="projects.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-menu">
+            <a href="index.html"><h1>Mahmoud Ibrahim</h1></a>
+            <div class="nav-links">
                 <a href="index.html" class="nav-link">
-                    <img src="./image/icons/home.png" alt="Home">
-                    <span>Home</span>
+                    <img src="image/icons/home.png" alt="Home icon">
+                    Home
                 </a>
                 <a href="resume.html" class="nav-link">
-                    <img src="./image/icons/resume.png" alt="Resume">
-                    <span>Resume</span>
+                    <img src="image/icons/resume.png" alt="Resume icon">
+                    Resume
                 </a>
                 <a href="projects.html" class="nav-link">
-                    <img src="./image/icons/projects.png" alt="Projects">
-                    <span>Projects</span>
+                    <img src="image/icons/projects.png" alt="Projects icon">
+                    Projects
+                </a>
+                <a href="read_my_journey.html" class="nav-link">
+                    <img src="image/icons/read.png" alt="Story icon">
+                    My Journey
+                </a>
+                <a href="certificates.html" class="nav-link">
+                    <img src="image/icons/certificates.png" alt="Certificates icon">
+                    Certificates
                 </a>
                 <a href="contact.html" class="nav-link">
-                    <img src="./image/icons/contact.png" alt="Contact">
-                    <span>Contact</span>
+                    <img src="image/icons/contact.png" alt="Contact icon">
+                    Contact Me
                 </a>
-            </nav>
-        </header>
-
-        <main>
-            <div class="project-container">
-                <div class="image-container">
-                    <img id="projectImage" src="./image/project1.jpg" alt="Project java and junit Image">
-                </div>
-                
-                <div class="buttons">
-                    <button class="btn" onclick="prevProject()">Previous</button>
-                    <button class="btn" onclick="nextProject()">Next</button>
-                </div>
-                <div class="text-container">
-                    <h2 id="projectTitle">DATA VALIDATION AND TESTING PROGRAM</h2>
-                    <p id="projectDescription">
-                        Developed a Java application using JUnit to automate unit testing for enhanced code reliability. 
-                        Implemented data validation algorithms to ensure accurate data input and processing consistency.
-                        Integrated JUnit testing framework to verify edge cases and maintain optimal software performance. 
-                        Optimized error handling within the program to detect data anomalies and prevent system failures.
-                    </p>
-                </div>
-
             </div>
-        </main>
-    
-        <script>
-            var images = [
-                "./image/project1.jpg", 
-                "./image/project2.jpg", 
-                "./image/project3.jpg"
-            ];
-            var alts = [
-                  "Data Validation and Testing Program",
-                  "Movies Platform Database by SQL and Access",
-                  "Technical Issue Reporting and Documentation"
-            ];
-            
-            var titles = [
-                "DATA VALIDATION AND TESTING PROGRAM", 
-                "Movies Platform Database by SQL and Access", 
-                "TECHNICAL ISSUE REPORTING AND DOCUMENTATION"
-            ];
-    
-            var descriptions = [
-                "• Developed a Java application using JUnit to automate unit testing for enhanced code reliability.<br>"+
-                "• Implemented data validation algorithms to ensure accurate data input and processing consistency.<br>"+
-                "• Integrated JUnit testing framework to verify edge cases and maintain optimal software performance. <br>"+
-                "• Optimized error handling within the program to detect data anomalies and prevent system failures.<br>",
-                "• Developed reports using SQL Server Reporting Services (SSRS) for data visualization.<br>" +
-                "• Utilized stored procedures and triggers to automate data processing and enhance workflow.<br>" +
-                "• Integrated SQL queries to connect multiple tables and ensure data consistency.<br>" +
-                "• Created complex query models to retrieve and filter data efficiently based on user needs.",
-                "• Prepared technical reports detailing issues encountered during Java programming and software development.<br>" +
-                "• Analyzed software bugs and provided step-by-step documentation for debugging and troubleshooting. <br>" +
-                "• Wrote unit tests using JUnit to verify the correctness of Java code.<br>" +
-                "• Documented test cases and results to ensure all issues were identified and resolved.<br>" +
-                "• Collaborated with the development team to implement solutions for identified technical issues.<br>" +
-                "• Created reports that included code snippets, error logs, and test outcomes for easier problem-solving.<br>"
-            ];
-    
-            var index = 0;
-    
-            function nextProject() {
-                index = (index + 1) % images.length;
-                document.getElementById("projectImage").src = images[index];
-                document.getElementById("projectTitle").textContent = titles[index];
-                document.getElementById("projectDescription").innerHTML = descriptions[index];
-            }
-    
-            function prevProject() {
-                index = (index - 1 + images.length) % images.length;
-                document.getElementById("projectImage").src = images[index];
-                document.getElementById("projectTitle").textContent = titles[index];
-                document.getElementById("projectDescription").innerHTML = descriptions[index];
-            }
-        </script>
-     
-     <div id="footer">
-        <footer>
-            <p class="author-line">© 2025 Mahmoud Ibrahim.</p>
-        </footer>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section class="projects-section">
+            <h2>My Projects</h2>
+            <div class="project-carousel">
+                <div class="carousel-inner">
+                    <div class="project-card">
+                        <img src="image/project_1.jpg" alt="Recipe Manager">
+                        <h3>Recipe Manager</h3>
+                        <p>A modular Java app using OOP principles. It leverages HashMap and file I/O to manage recipes efficiently. Generates shopping lists for users. Features an intuitive interface for personal use.</p>
+                        <a href="https://github.com/Mahmoud3Ibrahim/Recipe-Manager" target="_blank" class="cta-button">View on GitHub</a>
+                    </div>
+                    <div class="project-card">
+                        <img src="image/project_2.jpg" alt="Ottawa Movies Platform">
+                        <h3>Ottawa Movies Platform</h3>
+                        <p>A full-stack movie streaming site built with PHP. Uses HTML, CSS, and JavaScript for a responsive frontend. Includes login, search, playlists, and admin features. Stores data efficiently in MySQL.</p>
+                        <a href="https://github.com/Mahmoud3Ibrahim/Ottawa-Movies" target="_blank" class="cta-button">View on GitHub</a>
+                    </div>
+                    <div class="project-card">
+                        <img src="image/project_3.jpg" alt="Drum Inventory with GUI">
+                        <h3>Drum Inventory with GUI</h3>
+                        <p>A Java app using inheritance and polymorphism. Features a GUI with geometric capacity logic for drum management. Supports real-time inventory updates. Thoroughly tested for reliability.</p>
+                        <a href="https://github.com/Mahmoud3Ibrahim/Drum-Inventory" target="_blank" class="cta-button">View on GitHub</a>
+                    </div>
+                    <div class="project-card">
+                        <img src="image/project_4.jpg" alt="Fitness Tracker">
+                        <h3>Fitness Tracker</h3>
+                        <p>A Java fitness app built with OOP principles. Designed using UML and tested with JUnit. Accurately calculates distance and calories. Offers a clean interface for daily monitoring.</p>
+                        <a href="https://github.com/Mahmoud3Ibrahim/Fitness-Tracker" target="_blank" class="cta-button">View on GitHub</a>
+                    </div>
+                    <div class="project-card">
+                        <img src="image/project_5.jpg" alt="Movie DB - Oracle">
+                        <h3>Movie DB - Oracle</h3>
+                        <p>An Oracle SQL schema with PL/SQL procedures. Includes triggers and sequences for data integrity. Linked to MS Access for hybrid functionality. Optimized for performance and scalability.</p>
+                        <a href="https://github.com/Mahmoud3Ibrahim/Movie-DB-Oracle" target="_blank" class="cta-button">View on GitHub</a>
+                    </div>
+                    <div class="project-card">
+                        <img src="image/project_6.jpg" alt="School DB - pgAdmin">
+                        <h3>School DB - pgAdmin</h3>
+                        <p>A pgAdmin SQL database with subqueries and aggregations. Uses indexing for efficient data retrieval. Manages school records with scalability. Ensures robust performance for educational data.</p>
+                        <a href="https://github.com/Mahmoud3Ibrahim/School-DB" target="_blank" class="cta-button">View on GitHub</a>
+                    </div>
+                </div>
+                <div class="carousel-controls">
+                    <button class="carousel-btn prev-btn" onclick="prevProject()">Previous</button>
+                    <button class="carousel-btn next-btn" onclick="nextProject()">Next</button>
+                </div>
+            </div>
+        </section>
     </div>
-    
-    </body>
+
+    <footer>
+        <p>© 2025 Mahmoud Ibrahim. All rights reserved.</p>
+    </footer>
+    <script src="projects.js"></script>
+</body>
 </html>

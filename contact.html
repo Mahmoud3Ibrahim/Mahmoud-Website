@@ -1,61 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="description" content="Assignment01 home page">
-        <title>Mahmoud Ibrahim Website</title>
-        <link rel="stylesheet" type="text/css" href="./style_mahmoud.css">
-    </head>
-    <body id="body">
-        <header id="header">
-            <h1>Mahmoud Ibrahim</h1>
-            <nav class="nav-menu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Mahmoud Ibrahim">
+    <title>Mahmoud Ibrahim - Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-menu">
+            <a href="index.html"><h1>Mahmoud Ibrahim</h1></a>
+            <div class="nav-links">
                 <a href="index.html" class="nav-link">
-                    <img src="./image/icons/home.png" alt="Home icon">
-                    <span>Home</span>
+                    <img src="image/icons/home.png" alt="Home icon">
+                    Home
                 </a>
                 <a href="resume.html" class="nav-link">
-                    <img src="./image/icons/resume.png" alt="Resume icon">
-                    <span>Resume</span>
+                    <img src="image/icons/resume.png" alt="Resume icon">
+                    Resume
                 </a>
                 <a href="projects.html" class="nav-link">
-                    <img src="./image/icons/projects.png" alt="Projects icon">
-                    <span>Projects</span>
+                    <img src="image/icons/projects.png" alt="Projects icon">
+                    Projects
+                </a>
+                <a href="read_my_journey.html" class="nav-link">
+                    <img src="image/icons/read.png" alt="Story icon">
+                    My Journey
+                </a>
+                <a href="certificates.html" class="nav-link">
+                    <img src="image/icons/certificates.png" alt="Certificates icon">
+                    Certificates
                 </a>
                 <a href="contact.html" class="nav-link">
-                    <img src="./image/icons/contact.png" alt="Contact icon">
-                    <span>Contact</span>
+                    <img src="image/icons/contact.png" alt="Contact icon">
+                    Contact Me
                 </a>
-            </nav>
-        </header>
-        <div class="contact-container">
-            
-            <div class="message"> 
-                <h2>Looking to contact Mahmoud? Drop me a message below!</h2>
-                <p>I’ll get back to you at the earliest opportunity.</p>
             </div>
-        
-            <form method="POST" action="https://formsubmit.co/mah.ibra.ca@gmail.com">
-                <label for="name">Your Name:</label>
-                <input id="name" name="name" type="text" placeholder="Enter your name" class="contact-fields">
-        
-                <label for="phone">Your Phone:</label>
-                <input id="phone" name="phone" type="tel" placeholder="Enter your phone number" class="contact-fields">
-        
-                <label for="email">Your Email:</label>
-                <input id="email" name="email" type="email" placeholder="Enter your email" class="contact-fields">
-        
-                <label for="message">Your Message:</label>
-                <textarea id="message" name="message" class="contact-fields" rows="5" placeholder="Type your message here..."></textarea>
-                <input type="hidden" name="_captcha" value="false">
-                <input id="submit" name="submit" type="submit" value="Send Message" class="btn">
+        </nav>
+    </header>
+
+    <div class="container">
+        <section class="contact-section">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <label for="name">Name *</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message *</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit" class="cta-button">Send Message</button>
             </form>
-        </div>
-        
-        <div id="footer">
-            <footer>
-                <p class="author-line">© 2025 Mahmoud Ibrahim.</p>
-            </footer>
-        </div>
-    </body>
-    </html>
+            <div id="form-message"></div>
+
+            <div class="contact-info">
+                <p><img src="image/icons/phone.png" alt="Phone icon" class="contact-icon"> <a href="tel:+16133241184">+1 (613) 324-1184</a></p>
+                <p><img src="image/icons/email.png" alt="Email icon" class="contact-icon"> <a href="mailto:ibra0309@algonquinlive.com">ibra0309@algonquinlive.com</a></p>
+                <p><img src="image/icons/linkedin.png" alt="LinkedIn icon" class="contact-icon"> <a href="https://www.linkedin.com/in/mahmoud-ibrahim-3963b2327/" target="_blank">LinkedIn</a></p>
+                <p><img src="image/icons/github.png" alt="GitHub icon" class="contact-icon"> <a href="https://github.com/Mahmoud3Ibrahim" target="_blank">GitHub</a></p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2025 Mahmoud Ibrahim. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,150 +1,253 @@
 <!DOCTYPE html>
-<!--Name: Mahmoud Ibrahim 
-    StudentId: 041163059
-	File Name: index.html
-	Date Created:24-2-2025
-    Task Name: Assingnment 01
-	Description: This is Training for CSS and html
--->
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="description" content="Assignment01 home page">
-        <title>Mahmoud Ibrahim Website</title>
-        <link rel="stylesheet" type="text/css" href="./style_mahmoud.css">
-    </head>
-
-    <body id="body">
-        <header id="header">
-            <h1>Mahmoud Ibrahim</h1>
-            <nav class="nav-menu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mahmoud Ibrahim's Resume">
+    <title>Mahmoud Ibrahim - Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles_resume.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-menu">
+            <a href="index.html"><h1>Mahmoud Ibrahim</h1></a>
+            <div class="nav-links">
                 <a href="index.html" class="nav-link">
-                    <img src="./image/icons/home.png" alt="Home icon">
-                    <span>Home</span>
+                    <img src="image/icons/home.png" alt="Home icon">
+                    Home
                 </a>
                 <a href="resume.html" class="nav-link">
-                    <img src="./image/icons/resume.png" alt="Resume Icon">
-                    <span>Resume</span>
+                    <img src="image/icons/resume.png" alt="Resume icon">
+                    Resume
                 </a>
                 <a href="projects.html" class="nav-link">
-                    <img src="./image/icons/projects.png" alt="Projects icon">
-                    <span>Projects</span>
+                    <img src="image/icons/projects.png" alt="Projects icon">
+                    Projects
+                </a>
+                <a href="read_my_journey.html" class="nav-link">
+                    <img src="image/icons/read.png" alt="Story icon">
+                    My Journey
+                </a>
+                <a href="certificates.html" class="nav-link">
+                    <img src="image/icons/certificates.png" alt="Certificates icon">
+                    Certificates
                 </a>
                 <a href="contact.html" class="nav-link">
-                    <img src="./image/icons/contact.png" alt="Contact icon">
-                    <span>Contact</span>
+                    <img src="image/icons/contact.png" alt="Contact icon">
+                    Contact Me
                 </a>
-            </nav>
-        </header>
+            </div>
+        </nav>
+    </header>
 
-        <div class="contact-info-box">
-            <div class="contact-item">
-                <img src="./image/icons/phone.png" alt="Phone Icon" class="contact-icon"> <!-- Phone Icon -->
-                <a href="tel:+16133241184">+1 (613) 324-1184</a>
-            </div>
-            <div class="contact-item">
-                <img src="./image/icons/email.png" alt="Email Icon" class="contact-icon"> <!-- Email Icon -->
-                <a href="mailto:ibra0309@algonquinlive.com">ibra0309@algonquinlive.com</a>
-            </div>
-            <div class="contact-item">
-                <img src="./image/icons/linkedin.png" alt="LinkedIn Icon" class="contact-icon"> <!-- LinkedIn Icon -->
-                <a href="https://www.linkedin.com/in/mahmoud-ibrahim-3963b2327/" target="_blank">LinkedIn</a>
-            </div>
-            <div class="contact-item">
-                <img src="./image/icons/github.png" alt="GitHub Icon" class="contact-icon"> <!-- GitHub Icon -->
-                <a href="https://github.com/Mahmoud3Ibrahim" target="_blank">GitHub</a>
-            </div>
-        </div>
-        
-
-        <div class="content2">                  
-            <section id="name">
-                <h2>Mahmoud Hassan Ibrahim</h2>
-            </section>
-            <section id="summary">
-                <h2>Summary</h2>
-                <div class="Summary-item">
-            <h3>Mahmoud is a data analyst and aspiring software developer pursuing a Computer Programming diploma at Algonquin College. He has strong skills in Java, SQL, Python, and data visualization, with experience in database management and web development.
-            </h3>
+    <div class="container">
+        <section class="resume-section">
+            <h2>My Resume</h2>
+            <div class="resume-block">
+                <h3>Personal Information</h3>
+                <div class="resume-item contact-info">
+                    <p>
+                        <img src="image/icons/email.png" alt="Email icon" class="contact-icon">
+                        <a href="mailto:mahmoud3ibrahim@outlook.com">mahmoud3ibrahim@outlook.com</a>
+                    </p>
+                    <p>
+                        <img src="image/icons/phone.png" alt="Phone icon" class="contact-icon">
+                        <a href="tel:+16133241184">+1 (613) 324-1184</a>
+                    </p>
+                    <p>
+                        <img src="image/icons/linkedin.png" alt="LinkedIn icon" class="contact-icon">
+                        <a href="https://linkedin.com/in/Mahmoud3Ibrahim" target="_blank">linkedin.com/in/Mahmoud3Ibrahim</a>
+                    </p>
+                    <p>
+                        <img src="image/icons/github.png" alt="GitHub icon" class="contact-icon">
+                        <a href="https://github.com/Mahmoud3Ibrahim" target="_blank">github.com/Mahmoud3Ibrahim</a>
+                    </p>
                 </div>
-            </section>
-            
-            <section id="work-experience">
-                <h2>Work Experience</h2>
-                <div class="work-item">
-                    <h3>POSITION: DATA ANALYST AND VISUALIZATION REPORTER | YOUM7 NEWSPAPER | LOCATION: CAIRO, EGYPT | MAY 2014 – JAN 2024</h3>
+            </div>
+            <div class="resume-block">
+                <h3>Education</h3>
+                <div class="resume-item">
+                    <h4>Diploma in Computer Programming, Algonquin College, Ottawa, ON</h4>
+                    <p>2024 - 2026</p>
                     <ul>
-                        <li>Made scripts and television programs based on analysis of public and private data, transforming it into visualizations by Tableau.</li>
-                        <li>Cleaned, organized, and extracted relevant signals and data points to assist in trend analysis.</li>
-                        <li>Prepared detailed reports on data and insights gathered from various sources.</li>
-                        <li>Applied advanced data cleaning and visualization techniques to provide actionable insights.</li>
-                        <li>Created compelling visual content for television programs, enhancing audience's understanding of complex data trends.</li>
-                        <li>Supported editorial content development by offering data-driven insights to back journalistic reports.</li>
+                        <li>Currently pursuing advanced studies in Java, SQL, Object-Oriented Programming (OOP), and relational database management.</li>
+                        <li>Engaging in hands-on projects to master software development techniques and problem-solving skills.</li>
+                        <li>Achieved a GPA of 3.87 in the first two terms, demonstrating dedication and academic excellence.</li>
                     </ul>
                 </div>
-            </section>
-        
-            <section id="technical-skills">
-                <h2>Technical Skills</h2>
-                <ul>
-                    <li>Java & Development Tools: Proficient in Java with a strong understanding of OOP principles (encapsulation, inheritance, etc.) Experienced in Git for version control, JUnit for unit testing, and familiar with writing clear and structured documentation.</li>
-                    <li>Python: Strong knowledge of Python fundamentals for programming, completed a certification from University of Michigan via Coursera, focusing on Python programming fundamentals and data handling techniques.</li>
-                    <li>SQL & Database Management: Skilled in writing complex SQL queries, managing databases, and utilizing stored procedures and triggers to enhance database functionality and performance.</li>
-                    <li>Linux Fundamentals & Shell Scripting: Solid understanding of Linux basics, including file system navigation, user management, permissions, and package management.</li>
-                    <li>Web Development (HTML, CSS, JavaScript): Experienced in front-end development HTML for structuring content, CSS for styling and responsiveness, and JavaScript.</li>
-                    <li>MS Access Development: Experienced in designing forms, reports, and queries, managing relational databases, and automating workflows by macros.</li>
-                    <li>MS Excel & Data Analysis: Proficient in Pivot tables, advanced formulas, and data visualization tools to analyze and interpret large datasets efficiently.</li>
-                </ul>
-            </section>
-        
-            <section id="soft-skills">
-                <h2>Soft Skills</h2>
-                <ul>
-                    <li>Adaptable to diverse cultural and professional environments.</li>
-                    <li>Strong team player with a collaborative mindset.</li>
-                    <li>Quick learner, able to acquire new skills through self-learning and from peers.</li>
-                    <li>Values continuous learning and professional growth.</li>
-                </ul>
-            </section>
-
-            <section id="education">
-                <h2>Education</h2>
-                <div class="education-item">
-               
-                   <h3>• DIPLOMA COMPUTER PROGRAMMING | 2024 – 2026 | ALGONQUIN COLLEGE | OTTAWA, CANADA</h3>
-                    Studying core programming languages such as Java and SQL, with a focus on software development, database management, and object-oriented programming (OOP).<br>
-                    <h3>• BACHELOR'S DEGREE IN FINANCE AND ACCOUNTING | 2002 – 2006 | ALEXANDRIA UNIVERSITY | EGYPT</h3>
-                    Focused on financial analysis, financial reporting, and business management. Learned strong analytical skills and a deep understanding of financial markets and accounting practices.
-                
-                </div>
-            </section>
-           
-            <section id="volunteer-experience">
-                <h2>Volunteer Experience</h2>
-                <div class="volunteer-item">
-                    <h3>CHIEF | “FALSO" (FAKE NEWS COMBAT) INITIATIVE | LOCATION: EGYPT | DEC 2019 – JAN 2021</h3>
+                <div class="resume-item">
+                    <h4>Bachelor of Commerce in Finance and Accounting, Alexandria University, Egypt</h4>
+                    <p>Graduated: 2013</p>
                     <ul>
-                        <li>Led initiative to combat fake news through fact-checking, improving public awareness of misinformation.</li>
-                        <li>Managed a team to develop and implement strategies to identify and correct misleading content.</li>
-                        <li>Coordinated with media organizations, resulting in a 15% increase in fact-checking engagement within the community.</li>
+                        <li>Acquired a solid foundation in financial analysis, accounting principles, and business management.</li>
+                        <li>Developed strong analytical skills through complex financial reporting and data interpretation.</li>
+                        <li>Utilized Excel extensively for pivot tables, VLOOKUP, and automated reporting systems.</li>
                     </ul>
                 </div>
-            </section>
-        
-            <section id="certifications">
-                <h2>Certifications</h2>
-                   <h3>• PROGRAMMING FUNDAMENTALS IN PYTHON | UNIVERSITY OF MICHIGAN | ONLINE | JAN 2025 – APR 2025</h3>
-                    <p>Developed programming skills in Python, learning its use in web development, data analysis, and artificial intelligence.</p>
-                
-                  <h3>• GOOGLE DATA ANALYTICS CERTIFICATE | GOOGLE | ONLINE | MAR 2023 – AUG 2023</h3>
-                    <p>Gained foundational skills in data collection, cleaning, analysis, and visualization with tools like spreadsheets, SQL, R, and Tableau.</p>
-                            </section>
-                    
-        </div>
-        <div id="footer">
-            <footer>
-                <p class="author-line">© 2025 Mahmoud Ibrahim.</p>
-            </footer>
-        </div>
-    </body>
+            </div>
+            <div class="resume-block">
+                <h3>Technical Skills</h3>
+                <div class="resume-item">
+                    <h4>Programming Languages</h4>
+                    <ul>
+                        <li><strong>Java:</strong> Proficient in OOP principles (encapsulation, inheritance, polymorphism), data structures (ArrayList, LinkedList), exception handling, and GUI development.</li>
+                        <li><strong>Python:</strong> Skilled in loops, functions, and data manipulation, certified by University of Michigan.</li>
+                        <li><strong>Web Technologies:</strong> Experienced in HTML, CSS, JavaScript, and PHP for full-stack web development with responsive designs.</li>
+                    </ul>
+                </div>
+                <div class="resume-item">
+                    <h4>Databases</h4>
+                    <ul>
+                        <li><strong>SQL:</strong> Advanced skills in crafting complex queries, joins, subqueries, and PL/SQL scripts for Oracle and MySQL.</li>
+                        <li><strong>NoSQL:</strong> Knowledgeable in MongoDB, focusing on indexing, normalization, and performance optimization.</li>
+                    </ul>
+                </div>
+                <div class="resume-item">
+                    <h4>Tools & Platforms</h4>
+                    <ul>
+                        <li>Proficient in Git, GitHub, Eclipse, VS Code, Oracle SQL Developer, MySQL Workbench, and pgAdmin.</li>
+                        <li>Expert in MS Access, Excel (PivotTables, VLOOKUP), and Tableau for data analysis and visualization.</li>
+                    </ul>
+                </div>
+                <div class="resume-item">
+                    <h4>Operating Systems & Scripting</h4>
+                    <ul>
+                        <li>Strong experience with Linux, including file system navigation, user management, and Bash scripting for automation.</li>
+                        <li>Skilled in VMware for managing Linux virtual machines and comfortable with Windows environments.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="resume-block">
+                <h3>Soft Skills</h3>
+                <div class="resume-item">
+                    <ul>
+                        <li>Highly adaptable and resilient, successfully transitioning careers and adapting to new environments.</li>
+                        <li>Committed to continuous personal and professional growth, evident in pursuing a programming diploma in Canada.</li>
+                        <li>Dedicated, hardworking, and a quick learner, always eager to tackle new challenges.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="resume-block">
+                <h3>Academic Projects</h3>
+                <div class="resume-item">
+                    <h4>Recipe Manager (Java)</h4>
+                    <p>Winter 2025</p>
+                    <ul>
+                        <li>Developed a modular Java application using OOP, HashMap, and file I/O for recipe and shopping list management.</li>
+                    </ul>
+                </div>
+                <div class="resume-item">
+                    <h4>Drum Inventory with GUI (Java)</h4>
+                    <p>Winter 2025</p>
+                    <ul>
+                        <li>Created an inheritance-based Java hierarchy with polymorphism and integrated a GUI with geometric capacity logic.</li>
+                    </ul>
+                </div>
+                <div class="resume-item">
+                    <h4>Fitness Tracker (Java)</h4>
+                    <p>Winter 2025</p>
+                    <ul>
+                        <li>Built a Java fitness tracker using OOP, UML, and JUnit for accurate distance and calorie calculations.</li>
+                    </ul>
+                </div>
+                <div class="resume-item">
+                    <h4>Movie DB - Oracle</h4>
+                    <p>Winter 2025</p>
+                    <ul>
+                        <li>Designed an Oracle SQL schema with PL/SQL procedures, triggers, and sequences, linked to MS Access.</li>
+                    </ul>
+                </div>
+                <div class="resume-item">
+                    <h4>Movie DB - MySQL</h4>
+                    <p>Winter 2025</p>
+                    <ul>
+                        <li>Built a normalized MySQL database with complex queries and joins, connected to MS Access.</li>
+                    </ul>
+                </div>
+                <div class="resume-item">
+                    <h4>School DB - pgAdmin</h4>
+                    <p>Fall 2024</p>
+                    <ul>
+                        <li>Developed a pgAdmin SQL database with subqueries, aggregations, and indexing for optimization.</li>
+                    </ul>
+                </div>
+                <div class="resume-item">
+                    <h4>Ottawa Movies Platform</h4>
+                    <p>Winter 2025</p>
+                    <ul>
+                        <li>Developed a full-stack movie site using PHP, HTML, CSS, JavaScript, and MySQL with login and admin features.</li>
+                    </ul>
+                </div>
+                <div class="resume-item">
+                    <h4>Personal Portfolio Website</h4>
+                    <p>Winter 2025</p>
+                    <ul>
+                        <li>Built a responsive website using HTML and JavaScript to showcase projects and skills.</li>
+                    </ul>
+                </div>
+                <div class="resume-item">
+                    <h4>Bash Manage Users Scripts</h4>
+                    <p>Winter 2025</p>
+                    <ul>
+                        <li>Developed Bash scripts for automating user management and file operations in Linux.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="resume-block">
+                <h3>Work Experience</h3>
+                <div class="resume-item">
+                    <h4>Data Analyst & Visualization Reporter, Youm7 Newspaper, Cairo, Egypt</h4>
+                    <p>May 2014 - January 2024</p>
+                    <ul>
+                        <li>Analyzed public and private data using Tableau and SQL to create visualizations for TV programs and investigative reports.</li>
+                        <li>Collaborated with editorial teams to enhance data-driven storytelling and decision-making processes.</li>
+                        <li>Developed automated dashboards that improved reporting efficiency by 30%.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="resume-block">
+                <h3>Volunteering</h3>
+                <div class="resume-item">
+                    <h4>Founder & Lead, FALSO (Fake News Combat Initiative), Cairo, Egypt</h4>
+                    <p>December 2019 - January 2021</p>
+                    <ul>
+                        <li>Founded and led a team of 60 volunteers to combat misinformation in Egypt.</li>
+                        <li>Increased public engagement by 15% through media collaborations during the COVID-19 pandemic.</li>
+                        <li>Developed fact-checking methodologies that gained national recognition.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="resume-block">
+                <h3>Certifications</h3>
+                <div class="resume-item">
+                    <h4>Python Programming Fundamentals, University of Michigan (Online)</h4>
+                    <p>January 2025 - Present</p>
+                    <ul>
+                        <li>Enhancing skills in Python for web development, data analysis, and AI applications.</li>
+                    </ul>
+                </div>
+                <div class="resume-item">
+                    <h4>Google Data Analytics Certificate, Google (Online)</h4>
+                    <p>March 2023 - August 2023</p>
+                    <ul>
+                        <li>Mastered data collection, cleaning, and visualization using SQL, R, and Tableau.</li>
+                        <li>Completed a capstone project applying real-world data analysis techniques.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="resume-block">
+                <h3>References</h3>
+                <div class="resume-item">
+                    <p>Available upon request.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2025 Mahmoud Ibrahim. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
 </html>
