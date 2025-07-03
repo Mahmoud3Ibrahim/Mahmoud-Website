@@ -618,3 +618,4 @@ setTimeout(() => {
     
     console.log('🚀 All portfolio features loaded successfully!');
 }, 300);
+

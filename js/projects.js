@@ -15,7 +15,6 @@ function initializeProjects() {
     
     console.log('✅ Projects page initialized successfully');
 }
-
 // ===== NAVIGATION =====
 function initNavigation() {
     const navbar = document.querySelector('.navbar');
@@ -861,3 +860,22 @@ window.addEventListener('beforeunload', () => {
 });
 
 // ===== END OF PROJECTS JAVASCRIPT =====
+
+document.addEventListener('DOMContentLoaded', function () {
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const navMenu = document.getElementById('nav-menu');
+
+    if (mobileMenuBtn && navMenu) {
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenuBtn.classList.toggle('active');
+            navMenu.classList.toggle('active');
+
+            // Lock or unlock scroll on body
+            if (navMenu.classList.contains('active')) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = 'auto';
+            }
+        });
+    }
+});
