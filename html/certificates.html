@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mahmoud Ibrahim Certificates - Data Analytics & Programming">
+    <title>Certificates - Mahmoud Ibrahim</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/certificates.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+</head>
+<body>
+    <!-- Video Background -->
+    <div class="video-background">
+        <video autoplay muted loop id="background-video">
+            <source src="../image/Background.mp4" type="video/mp4">
+            <div class="video-fallback"></div>
+        </video>
+        <div class="video-overlay"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-brand">
+                <span class="brand-name">Mahmoud Ibrahim</span>
+                <span class="brand-title">Data Analytics & Software Developer</span>
+            </a>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="../index.html" class="nav-link">
+                    <img src="../image/icons/home.png" alt="Home" class="nav-icon">
+                    <span>Home</span>
+                </a>
+                <a href="resume.html" class="nav-link">
+                    <img src="../image/icons/resume.png" alt="Resume" class="nav-icon">
+                    <span>Resume</span>
+                </a>
+                <a href="projects.html" class="nav-link">
+                    <img src="../image/icons/projects.png" alt="Projects" class="nav-icon">
+                    <span>Projects</span>
+                </a>
+                <a href="journey.html" class="nav-link">
+                    <span>My Journey</span>
+                </a>
+                <a href="certificates.html" class="nav-link active">
+                    <span>Certificates</span>
+                </a>
+                <a href="contact.html" class="nav-link">
+                    <img src="../image/icons/contact.png" alt="Contact" class="nav-icon">
+                    <span>Contact</span>
+                </a>
+            </div>
+
+            <div class="mobile-menu-btn" id="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Certificates Header -->
+        <section class="certificates-header">
+            <div class="container">
+                <div class="certificates-intro">
+                    <h1>My Certificates</h1>
+                    <p class="certificates-subtitle">Continuous learning and professional development through industry-recognized certifications</p>
+                    <div class="certificates-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">7+</span>
+                            <span class="stat-label">Certificates</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">3</span>
+                            <span class="stat-label">Providers</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">2024-2025</span>
+                            <span class="stat-label">Timeline</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Filter Section -->
+        <section class="certificates-filter">
+            <div class="container">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All Certificates</button>
+                    <button class="filter-btn" data-filter="programming">Programming</button>
+                    <button class="filter-btn" data-filter="data-analytics">Data Analytics</button>
+                    <button class="filter-btn" data-filter="google">Google</button>
+                    <button class="filter-btn" data-filter="university">University</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certificates Grid -->
+        <section class="certificates-section">
+            <div class="container">
+                <div class="certificates-grid">
+                    <!-- Latest Certificate - Python Basics -->
+                    <div class="certificate-card featured" data-category="programming university" data-year="2025">
+                        <div class="certificate-badge">
+                            <span class="badge-text">Latest</span>
+                        </div>
+                        <div class="certificate-image">
+                            <img src="../image/certificate_7.jpg" alt="Python Basics - University of Michigan">
+                            <div class="certificate-overlay">
+                                <div class="overlay-content">
+                                    <i class="devicon-python-plain"></i>
+                                    <span>View Certificate</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="certificate-content">
+                            <div class="certificate-header">
+                                <div class="certificate-provider">University of Michigan</div>
+                                <div class="certificate-date">Jun 2025</div>
+                            </div>
+                            <h3>Python Basics</h3>
+                            <p>Comprehensive foundation in Python programming covering syntax, data types, control structures, and problem-solving techniques through Coursera.</p>
+                            <div class="certificate-skills">
+                                <span class="skill-tag">Python Programming</span>
+                                <span class="skill-tag">Data Types</span>
+                                <span class="skill-tag">Control Structures</span>
+                                <span class="skill-tag">Problem Solving</span>
+                            </div>
+                            <div class="certificate-actions">
+                                <a href="https://coursera.org/verify/5JHPB5DUPEKF" target="_blank" class="cert-link verify-link">
+                                    <i class="link-icon">🔗</i>
+                                    Verify Certificate
+                                </a>
+                                <button class="cert-link view-link" onclick="openCertificateModal('certificate_7')">
+                                    <i class="link-icon">👁️</i>
+                                    View Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Google Data Analytics Professional Certificate -->
+                    <div class="certificate-card featured" data-category="data-analytics google" data-year="2023">
+                        <div class="certificate-badge professional">
+                            <span class="badge-text">Professional</span>
+                        </div>
+                        <div class="certificate-image">
+                            <img src="../image/certificate_1.jpg" alt="Google Data Analytics Professional Certificate">
+                            <div class="certificate-overlay">
+                                <div class="overlay-content">
+                                    <i class="devicon-google-plain"></i>
+                                    <span>View Certificate</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="certificate-content">
+                            <div class="certificate-header">
+                                <div class="certificate-provider">Google</div>
+                                <div class="certificate-date">Aug 2023</div>
+                            </div>
+                            <h3>Google Data Analytics Professional Certificate</h3>
+                            <p>A prestigious certification that equipped me with comprehensive skills in data analysis, transforming raw data into actionable insights with expertise.</p>
+                            <div class="certificate-skills">
+                                <span class="skill-tag">Data Analysis</span>
+                                <span class="skill-tag">SQL</span>
+                                <span class="skill-tag">R Programming</span>
+                                <span class="skill-tag">Tableau</span>
+                                <span class="skill-tag">Data Visualization</span>
+                            </div>
+                            <div class="certificate-actions">
+                                <a href="#" target="_blank" class="cert-link verify-link">
+                                    <i class="link-icon">🔗</i>
+                                    Verify Certificate
+                                </a>
+                                <button class="cert-link view-link" onclick="openCertificateModal('certificate_1')">
+                                    <i class="link-icon">👁️</i>
+                                    View Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Share Data Through the Art of Visualization -->
+                    <div class="certificate-card" data-category="data-analytics google" data-year="2023">
+                        <div class="certificate-image">
+                            <img src="../image/certificate_2.jpg" alt="Share Data Through the Art of Visualization">
+                            <div class="certificate-overlay">
+                                <div class="overlay-content">
+                                    <i class="devicon-google-plain"></i>
+                                    <span>View Certificate</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="certificate-content">
+                            <div class="certificate-header">
+                                <div class="certificate-provider">Google</div>
+                                <div class="certificate-date">Jul 2023</div>
+                            </div>
+                            <h3>Share Data Through the Art of Visualization</h3>
+                            <p>A valuable certification that honed my ability to create impactful visual stories from data using tools like Tableau and advanced visualization techniques.</p>
+                            <div class="certificate-skills">
+                                <span class="skill-tag">Data Visualization</span>
+                                <span class="skill-tag">Tableau</span>
+                                <span class="skill-tag">Storytelling</span>
+                                <span class="skill-tag">Dashboard Design</span>
+                            </div>
+                            <div class="certificate-actions">
+                                <a href="#" target="_blank" class="cert-link verify-link">
+                                    <i class="link-icon">🔗</i>
+                                    Verify Certificate
+                                </a>
+                                <button class="cert-link view-link" onclick="openCertificateModal('certificate_2')">
+                                    <i class="link-icon">👁️</i>
+                                    View Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Google Data Analytics Capstone -->
+                    <div class="certificate-card" data-category="data-analytics google" data-year="2023">
+                        <div class="certificate-image">
+                            <img src="../image/certificate_3.jpg" alt="Google Data Analytics Capstone: Complete a Case Study">
+                            <div class="certificate-overlay">
+                                <div class="overlay-content">
+                                    <i class="devicon-google-plain"></i>
+                                    <span>View Certificate</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="certificate-content">
+                            <div class="certificate-header">
+                                <div class="certificate-provider">Google</div>
+                                <div class="certificate-date">Aug 2023</div>
+                            </div>
+                            <h3>Google Data Analytics Capstone: Complete a Case Study</h3>
+                            <p>An impressive achievement showcasing my ability to apply data analysis skills in a real-world case study project with comprehensive analysis.</p>
+                            <div class="certificate-skills">
+                                <span class="skill-tag">Case Study</span>
+                                <span class="skill-tag">Data Analysis</span>
+                                <span class="skill-tag">Project Management</span>
+                                <span class="skill-tag">Presentation</span>
+                            </div>
+                            <div class="certificate-actions">
+                                <a href="#" target="_blank" class="cert-link verify-link">
+                                    <i class="link-icon">🔗</i>
+                                    Verify Certificate
+                                </a>
+                                <button class="cert-link view-link" onclick="openCertificateModal('certificate_3')">
+                                    <i class="link-icon">👁️</i>
+                                    View Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Data Analytics with R -->
+                    <div class="certificate-card" data-category="data-analytics google programming" data-year="2023">
+                        <div class="certificate-image">
+                            <img src="../image/certificate_4.jpg" alt="Data Analytics with R">
+                            <div class="certificate-overlay">
+                                <div class="overlay-content">
+                                    <i class="devicon-r-original"></i>
+                                    <span>View Certificate</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="certificate-content">
+                            <div class="certificate-header">
+                                <div class="certificate-provider">Google</div>
+                                <div class="certificate-date">Jun 2023</div>
+                            </div>
+                            <h3>Data Analytics with R</h3>
+                            <p>A certification that enhanced my skills in using R programming for statistical analysis, data manipulation, and advanced visualization techniques.</p>
+                            <div class="certificate-skills">
+                                <span class="skill-tag">R Programming</span>
+                                <span class="skill-tag">Statistical Analysis</span>
+                                <span class="skill-tag">Data Manipulation</span>
+                                <span class="skill-tag">ggplot2</span>
+                            </div>
+                            <div class="certificate-actions">
+                                <a href="#" target="_blank" class="cert-link verify-link">
+                                    <i class="link-icon">🔗</i>
+                                    Verify Certificate
+                                </a>
+                                <button class="cert-link view-link" onclick="openCertificateModal('certificate_4')">
+                                    <i class="link-icon">👁️</i>
+                                    View Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Process Data -->
+                    <div class="certificate-card" data-category="data-analytics google" data-year="2023">
+                        <div class="certificate-image">
+                            <img src="../image/certificate_5.jpg" alt="Process Data">
+                            <div class="certificate-overlay">
+                                <div class="overlay-content">
+                                    <i class="devicon-google-plain"></i>
+                                    <span>View Certificate</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="certificate-content">
+                            <div class="certificate-header">
+                                <div class="certificate-provider">Google</div>
+                                <div class="certificate-date">May 2023</div>
+                            </div>
+                            <h3>Process Data</h3>
+                            <p>A certification that taught me the art of cleaning and preparing data for effective analysis, ensuring data integrity and quality.</p>
+                            <div class="certificate-skills">
+                                <span class="skill-tag">Data Cleaning</span>
+                                <span class="skill-tag">Data Preparation</span>
+                                <span class="skill-tag">Data Integrity</span>
+                                <span class="skill-tag">Quality Assurance</span>
+                            </div>
+                            <div class="certificate-actions">
+                                <a href="#" target="_blank" class="cert-link verify-link">
+                                    <i class="link-icon">🔗</i>
+                                    Verify Certificate
+                                </a>
+                                <button class="cert-link view-link" onclick="openCertificateModal('certificate_5')">
+                                    <i class="link-icon">👁️</i>
+                                    View Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Prepare Data for Exploration -->
+                    <div class="certificate-card" data-category="data-analytics google" data-year="2023">
+                        <div class="certificate-image">
+                            <img src="../image/certificate_6.jpg" alt="Prepare Data for Exploration">
+                            <div class="certificate-overlay">
+                                <div class="overlay-content">
+                                    <i class="devicon-google-plain"></i>
+                                    <span>View Certificate</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="certificate-content">
+                            <div class="certificate-header">
+                                <div class="certificate-provider">Google</div>
+                                <div class="certificate-date">Apr 2023</div>
+                            </div>
+                            <h3>Prepare Data for Exploration</h3>
+                            <p>A certification that equipped me with skills to organize and prepare data for insightful exploration and comprehensive analysis.</p>
+                            <div class="certificate-skills">
+                                <span class="skill-tag">Data Organization</span>
+                                <span class="skill-tag">Data Exploration</span>
+                                <span class="skill-tag">Database Management</span>
+                                <span class="skill-tag">Data Collection</span>
+                            </div>
+                            <div class="certificate-actions">
+                                <a href="#" target="_blank" class="cert-link verify-link">
+                                    <i class="link-icon">🔗</i>
+                                    Verify Certificate
+                                </a>
+                                <button class="cert-link view-link" onclick="openCertificateModal('certificate_6')">
+                                    <i class="link-icon">👁️</i>
+                                    View Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Achievements Summary -->
+                <div class="achievements-summary">
+                    <div class="summary-card">
+                        <h3>Certification Journey</h3>
+                        <p>My commitment to continuous learning is reflected in these industry-recognized certifications from Google and University of Michigan. Each certificate represents mastery of specific skills essential for modern data analytics and software development.</p>
+                        <div class="learning-path">
+                            <div class="path-item">
+                                <span class="path-year">2023</span>
+                                <span class="path-desc">Google Data Analytics Professional Certificate - Complete Program</span>
+                            </div>
+                            <div class="path-item">
+                                <span class="path-year">2025</span>
+                                <span class="path-desc">University of Michigan Python Programming Fundamentals</span>
+                            </div>
+                            <div class="path-item">
+                                <span class="path-year">Ongoing</span>
+                                <span class="path-desc">Advanced Programming & Cloud Technologies</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Next Steps Section -->
+        <section class="next-steps-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>What's Next?</h2>
+                    <p>My learning journey continues with these upcoming certifications</p>
+                </div>
+                <div class="next-steps-grid">
+                    <div class="next-step-item">
+                        <div class="step-icon">🐍</div>
+                        <h3>Advanced Python</h3>
+                        <p>Complete Python Programming Specialization from University of Michigan</p>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 25%;"></div>
+                        </div>
+                        <span class="progress-text">25% Complete</span>
+                    </div>
+                    <div class="next-step-item">
+                        <div class="step-icon">☁️</div>
+                        <h3>AWS Cloud Practitioner</h3>
+                        <p>Amazon Web Services Cloud Fundamentals Certification</p>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 0%;"></div>
+                        </div>
+                        <span class="progress-text">Planning</span>
+                    </div>
+                    <div class="next-step-item">
+                        <div class="step-icon">🤖</div>
+                        <h3>Machine Learning</h3>
+                        <p>Google Machine Learning Engineer Certificate</p>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 0%;"></div>
+                        </div>
+                        <span class="progress-text">Future Goal</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Certificate Modal -->
+    <div id="certificateModal" class="certificate-modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <div class="modal-body">
+                <img id="modalImage" src="" alt="Certificate">
+                <div class="modal-info">
+                    <h3 id="modalTitle"></h3>
+                    <p id="modalDescription"></p>
+                    <div id="modalSkills" class="modal-skills"></div>
+                    <div class="modal-actions">
+                        <a id="modalVerify" href="#" target="_blank" class="modal-btn verify-btn">Verify Certificate</a>
+                        <button class="modal-btn download-btn" onclick="downloadCertificate()">Download Image</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Mahmoud Ibrahim. All rights reserved.</p>
+                <p>Continuously learning and growing in Canada's tech landscape 🇨🇦</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/index.js"></script>
+    <script src="../js/certificates.js"></script>
+</body>
+</html>

@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mahmoud Ibrahim Projects - Data Analytics & Software Development">
+    <title>Projects - Mahmoud Ibrahim</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/projects.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+</head>
+<body>
+    <!-- Video Background -->
+    <div class="video-background">
+        <video autoplay muted loop id="background-video">
+            <source src="../image/Background.mp4" type="video/mp4">
+            <div class="video-fallback"></div>
+        </video>
+        <div class="video-overlay"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-brand">
+                <span class="brand-name">Mahmoud Ibrahim</span>
+                <span class="brand-title">Data Analytics & Software Developer</span>
+            </a>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="../index.html" class="nav-link">
+                    <img src="../image/icons/home.png" alt="Home" class="nav-icon">
+                    <span>Home</span>
+                </a>
+                <a href="resume.html" class="nav-link">
+                    <img src="../image/icons/resume.png" alt="Resume" class="nav-icon">
+                    <span>Resume</span>
+                </a>
+                <a href="projects.html" class="nav-link active">
+                    <img src="../image/icons/projects.png" alt="Projects" class="nav-icon">
+                    <span>Projects</span>
+                </a>
+                <a href="journey.html" class="nav-link">
+                    <span>My Journey</span>
+                </a>
+                <a href="certificates.html" class="nav-link">
+                    <span>Certificates</span>
+                </a>
+                <a href="contact.html" class="nav-link">
+                    <img src="../image/icons/contact.png" alt="Contact" class="nav-icon">
+                    <span>Contact</span>
+                </a>
+            </div>
+
+            <div class="mobile-menu-btn" id="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Projects Header -->
+        <section class="projects-header">
+            <div class="container">
+                <div class="projects-intro">
+                    <h1>My Projects</h1>
+                    <p class="projects-subtitle">A showcase of my technical skills and problem-solving abilities</p>
+                    <div class="projects-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">12+</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">6</span>
+                            <span class="stat-label">Languages</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">4</span>
+                            <span class="stat-label">Databases</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Filter Section -->
+        <section class="projects-filter">
+            <div class="container">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="java">Java Applications</button>
+                    <button class="filter-btn" data-filter="web">Web Development</button>
+                    <button class="filter-btn" data-filter="database">Database Systems</button>
+                    <button class="filter-btn" data-filter="data-analytics">Data Analytics</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Grid -->
+        <section class="projects-section">
+            <div class="container">
+                <div class="projects-grid">
+                    <!-- Java Applications -->
+                    <div class="project-card featured" data-category="java">
+                        <div class="project-image">
+                            <img src="../image/project_1.jpg" alt="Student Management System">
+                            <div class="project-overlay">
+                                <div class="project-tech-icons">
+                                    <i class="devicon-java-plain"></i>
+                                    <i class="devicon-mysql-plain"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category">Java • Enterprise</div>
+                            <h3>Ottawa Authers</h3>
+                            <p>Enterprise-level application implementing DAO pattern with JDBC connectivity to SQL database. Built three-tier architecture separating presentation layer, business logic layer, and data access layer.</p>
+                            <div class="project-tech">
+                                <span>Java</span>
+                                <span>JDBC</span>
+                                <span>DAO Pattern</span>
+                                <span>SQL</span>
+                                <span>Three-tier Architecture</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Mahmoud3Ibrahim/Student-Management-System" target="_blank" class="project-link">
+                                    <i class="link-icon">🔗</i>
+                                    View on GitHub
+                                </a>
+                                <a href="#" class="project-link demo-link">
+                                    <i class="link-icon">👁️</i>
+                                    Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="java">
+                        <div class="project-image">
+                            <img src="../image/project_4.jpg" alt="Fitness Tracker">
+                            <div class="project-overlay">
+                                <div class="project-tech-icons">
+                                    <i class="devicon-java-plain"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category">Java • GUI</div>
+                            <h3>Fitness Tracker</h3>
+                            <p>GUI application with JUnit testing, UML design, and calculation algorithms. Accurately calculates distance and calories with a clean interface for daily monitoring.</p>
+                            <div class="project-tech">
+                                <span>Java</span>
+                                <span>Swing/AWT</span>
+                                <span>JUnit Testing</span>
+                                <span>UML Design</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Mahmoud3Ibrahim/Fitness-Tracker" target="_blank" class="project-link">
+                                    <i class="link-icon">🔗</i>
+                                    View on GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="java">
+                        <div class="project-image">
+                            <img src="../image/project_3.jpg" alt="Drum Inventory">
+                            <div class="project-overlay">
+                                <div class="project-tech-icons">
+                                    <i class="devicon-java-plain"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category">Java • OOP</div>
+                            <h3>Drum Inventory with GUI</h3>
+                            <p>Inheritance-based architecture with polymorphism and geometric calculations. Features GUI with geometric capacity logic for drum management and real-time inventory updates.</p>
+                            <div class="project-tech">
+                                <span>Java</span>
+                                <span>Inheritance</span>
+                                <span>Polymorphism</span>
+                                <span>GUI Development</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Mahmoud3Ibrahim/Drum-Inventory" target="_blank" class="project-link">
+                                    <i class="link-icon">🔗</i>
+                                    View on GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="java">
+                        <div class="project-image">
+                            <img src="../image/project_7.jpg" alt="Recipe Manager">
+                            <div class="project-overlay">
+                                <div class="project-tech-icons">
+                                    <i class="devicon-csharp-plain"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category">C# • Desktop</div>
+                            <h3>Recipe Manager</h3>
+                            <p>Modular OOP application with HashMap data structures and file I/O operations. Generates shopping lists for users with an intuitive interface for personal use.</p>
+                            <div class="project-tech">
+                                <span>C#</span>
+                                <span>HashMap</span>
+                                <span>File I/O</span>
+                                <span>OOP Design</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Mahmoud3Ibrahim/Recipe-Manager" target="_blank" class="project-link">
+                                    <i class="link-icon">🔗</i>
+                                    View on GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Web Development -->
+                    <div class="project-card featured" data-category="web">
+                        <div class="project-image">
+                            <img src="../image/project_2.jpg" alt="Ottawa Movies Platform">
+                            <div class="project-overlay">
+                                <div class="project-tech-icons">
+                                    <i class="devicon-php-plain"></i>
+                                    <i class="devicon-mysql-plain"></i>
+                                    <i class="devicon-javascript-plain"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category">Full-Stack • PHP</div>
+                            <h3>Ottawa Movies Platform</h3>
+                            <p>Full-stack web application with PHP backend, MySQL database, user authentication, admin dashboard with data analytics, search functionality, and responsive design.</p>
+                            <div class="project-tech">
+                                <span>PHP</span>
+                                <span>MySQL</span>
+                                <span>JavaScript</span>
+                                <span>HTML5/CSS3</span>
+                                <span>User Authentication</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Mahmoud3Ibrahim/Ottawa-Movies" target="_blank" class="project-link">
+                                    <i class="link-icon">🔗</i>
+                                    View on GitHub
+                                </a>
+                                <a href="#" class="project-link demo-link">
+                                    <i class="link-icon">👁️</i>
+                                    Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="web">
+                        <div class="project-image">
+                            <img src="../image/project_8.jpg" alt="Personal Portfolio">
+                            <div class="project-overlay">
+                                <div class="project-tech-icons">
+                                    <i class="devicon-html5-plain"></i>
+                                    <i class="devicon-css3-plain"></i>
+                                    <i class="devicon-javascript-plain"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category">Frontend • Portfolio</div>
+                            <h3>Personal Portfolio Website</h3>
+                            <p>Responsive HTML/CSS/JavaScript site showcasing development projects. Features modern design, smooth animations, and optimized performance across all devices.</p>
+                            <div class="project-tech">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                                <span>Responsive Design</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Mahmoud3Ibrahim/Portfolio" target="_blank" class="project-link">
+                                    <i class="link-icon">🔗</i>
+                                    View on GitHub
+                                </a>
+                                <a href="../index.html" class="project-link demo-link">
+                                    <i class="link-icon">👁️</i>
+                                    Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Database Systems -->
+                    <div class="project-card" data-category="database">
+                        <div class="project-image">
+                            <img src="../image/project_5.jpg" alt="Movie Database Oracle">
+                            <div class="project-overlay">
+                                <div class="project-tech-icons">
+                                    <i class="devicon-oracle-original"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category">Database • Oracle</div>
+                            <h3>Movie Database (Oracle)</h3>
+                            <p>Normalized schema with PL/SQL procedures, triggers, and sequences. Linked to MS Access for hybrid functionality, optimized for performance and scalability.</p>
+                            <div class="project-tech">
+                                <span>Oracle</span>
+                                <span>PL/SQL</span>
+                                <span>Triggers</span>
+                                <span>Sequences</span>
+                                <span>MS Access</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Mahmoud3Ibrahim/Movie-DB-Oracle" target="_blank" class="project-link">
+                                    <i class="link-icon">🔗</i>
+                                    View on GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="database">
+                        <div class="project-image">
+                            <img src="../image/project_6.jpg" alt="School Database PostgreSQL">
+                            <div class="project-overlay">
+                                <div class="project-tech-icons">
+                                    <i class="devicon-postgresql-plain"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category">Database • PostgreSQL</div>
+                            <h3>School Database (PostgreSQL)</h3>
+                            <p>PostgreSQL database with optimized queries, indexing, subqueries, and performance tuning. Manages school records with scalability and robust performance.</p>
+                            <div class="project-tech">
+                                <span>PostgreSQL</span>
+                                <span>Indexing</span>
+                                <span>Subqueries</span>
+                                <span>Performance Tuning</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Mahmoud3Ibrahim/School-DB" target="_blank" class="project-link">
+                                    <i class="link-icon">🔗</i>
+                                    View on GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Data Analytics -->
+                    <div class="project-card featured" data-category="data-analytics">
+                        <div class="project-image">
+                            <img src="../image/Decision Tree.png" alt="Heart Disease Prediction">
+                            <div class="project-overlay">
+                                <div class="project-tech-icons">
+                                    <i class="devicon-r-original"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category">Data Analytics • ML</div>
+                            <h3>Heart Disease Prediction</h3>
+                            <p>Machine learning project using RapidMiner with K-Means clustering to analyze heart disease datasets and predict patient risk levels with high accuracy.</p>
+                            <div class="project-tech">
+                                <span>RapidMiner</span>
+                                <span>K-Means Clustering</span>
+                                <span>Machine Learning</span>
+                                <span>Data Analysis</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Mahmoud3Ibrahim/Heart-Disease-Prediction" target="_blank" class="project-link">
+                                    <i class="link-icon">🔗</i>
+                                    View on GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="data-analytics">
+                        <div class="project-image">
+                            <img src="../image/data_processing.jpg" alt="Large Dataset Processing">
+                            <div class="project-overlay">
+                                <div class="project-tech-icons">
+                                    <i class="devicon-java-plain"></i>
+                                    <i class="devicon-mysql-plain"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category">Data Processing • Java</div>
+                            <h3>Large Dataset Processing</h3>
+                            <p>Java application to extract, clean, and analyze data from multiple sources. Implements efficient algorithms for handling large volumes of data with optimized performance.</p>
+                            <div class="project-tech">
+                                <span>Java</span>
+                                <span>Data Processing</span>
+                                <span>ETL</span>
+                                <span>Performance Optimization</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Mahmoud3Ibrahim/Data-Processing" target="_blank" class="project-link">
+                                    <i class="link-icon">🔗</i>
+                                    View on GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Load More Button -->
+                <div class="load-more-section">
+                    <button class="btn btn-outline load-more-btn">Load More Projects</button>
+                    <p class="github-link">
+                        <span>View all projects on</span>
+                        <a href="https://github.com/Mahmoud3Ibrahim" target="_blank" class="github-btn">
+                            <i class="github-icon">📂</i>
+                            GitHub
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Mahmoud Ibrahim. All rights reserved.</p>
+                <p>Built with passion for data and technology in Ottawa, Canada 🇨🇦</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/index.js"></script>
+    <script src="../js/projects.js"></script>
+</body>
+</html>

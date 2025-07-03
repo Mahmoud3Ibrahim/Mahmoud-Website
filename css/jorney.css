@@ -1,0 +1,791 @@
+/* ===== JOURNEY PAGE STYLES ===== */
+
+/* ===== JOURNEY HEADER ===== */
+.journey-header {
+    padding: var(--space-20) 0 var(--space-16) 0;
+    background: var(--bg-secondary);
+    border-radius: 0 0 var(--radius-2xl) var(--radius-2xl);
+    margin-top: 80px;
+    text-align: center;
+}
+
+.journey-intro h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    color: var(--white);
+    margin-bottom: var(--space-4);
+    font-family: 'JetBrains Mono', monospace;
+    background: linear-gradient(135deg, var(--white), var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.journey-subtitle {
+    font-size: 1.3rem;
+    color: var(--gray-300);
+    margin-bottom: var(--space-8);
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.7;
+}
+
+.journey-stats {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-6);
+    margin-top: var(--space-8);
+    flex-wrap: wrap;
+}
+
+.journey-stats .stat-item {
+    text-align: center;
+    background: var(--bg-card);
+    padding: var(--space-5);
+    border-radius: var(--radius-xl);
+    border: 1px solid rgba(59, 130, 246, 0.3);
+    backdrop-filter: blur(10px);
+    min-width: 140px;
+    transition: var(--transition-slow);
+}
+
+.journey-stats .stat-item:hover {
+    transform: translateY(-5px);
+    border-color: rgba(59, 130, 246, 0.5);
+    box-shadow: var(--shadow-lg);
+}
+
+.journey-stats .stat-number {
+    display: block;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    font-family: 'JetBrains Mono', monospace;
+    margin-bottom: var(--space-1);
+}
+
+.journey-stats .stat-label {
+    font-size: 0.9rem;
+    color: var(--gray-400);
+    font-weight: 500;
+}
+
+/* ===== TIMELINE SECTION ===== */
+.timeline-section {
+    padding: var(--space-20) 0;
+    background: var(--bg-secondary);
+    border-top: 1px solid rgba(59, 130, 246, 0.1);
+}
+
+.timeline {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: linear-gradient(180deg, 
+        var(--primary-color) 0%, 
+        var(--secondary-color) 50%, 
+        var(--data-color) 100%);
+    transform: translateX(-50%);
+    border-radius: var(--radius-sm);
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
+}
+
+/* ===== TIMELINE ITEMS ===== */
+.timeline-item {
+    position: relative;
+    margin-bottom: var(--space-16);
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease-out;
+}
+
+.timeline-item.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+.timeline-item:nth-child(odd) .timeline-text {
+    padding-right: var(--space-8);
+    padding-left: 0;
+}
+
+.timeline-item:nth-child(even) .timeline-text {
+    padding-left: var(--space-8);
+    padding-right: 0;
+}
+
+/* ===== TIMELINE MARKER ===== */
+.timeline-marker {
+    position: absolute;
+    left: 50%;
+    top: 50px;
+    transform: translateX(-50%);
+    z-index: 2;
+    text-align: center;
+}
+
+.marker-icon {
+    width: 60px;
+    height: 60px;
+    background: var(--bg-card);
+    border: 3px solid var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.4);
+    transition: var(--transition-slow);
+    margin-bottom: var(--space-2);
+}
+
+.marker-icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 30px rgba(59, 130, 246, 0.6);
+}
+
+.timeline-date {
+    background: var(--primary-color);
+    color: var(--white);
+    padding: var(--space-1) var(--space-3);
+    border-radius: var(--radius-lg);
+    font-size: 0.8rem;
+    font-weight: 600;
+    font-family: 'JetBrains Mono', monospace;
+    box-shadow: var(--shadow-md);
+}
+
+/* ===== TIMELINE CONTENT ===== */
+.timeline-content {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-8);
+}
+
+.timeline-text {
+    flex: 1;
+    background: var(--bg-card);
+    padding: var(--space-6);
+    border-radius: var(--radius-xl);
+    border: 1px solid rgba(59, 130, 246, 0.2);
+    backdrop-filter: blur(10px);
+    transition: var(--transition-slow);
+}
+
+.timeline-text:hover {
+    border-color: rgba(59, 130, 246, 0.4);
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-xl);
+}
+
+.timeline-text h3 {
+    font-size: 1.8rem;
+    color: var(--white);
+    margin-bottom: var(--space-2);
+    font-weight: 700;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.phase-description {
+    color: var(--primary-color);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: var(--space-4);
+    font-style: italic;
+}
+
+.story-details {
+    margin-bottom: var(--space-5);
+}
+
+.story-details p {
+    color: var(--gray-300);
+    line-height: 1.7;
+    margin-bottom: var(--space-3);
+    font-size: 0.95rem;
+}
+
+/* ===== TIMELINE IMAGE ===== */
+.timeline-image {
+    flex: 0 0 300px;
+    text-align: center;
+}
+
+.timeline-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: var(--radius-lg);
+    border: 2px solid rgba(59, 130, 246, 0.3);
+    transition: var(--transition-slow);
+    box-shadow: var(--shadow-md);
+}
+
+.timeline-image img:hover {
+    transform: scale(1.05);
+    border-color: rgba(59, 130, 246, 0.5);
+    box-shadow: var(--shadow-xl);
+}
+
+.caption {
+    color: var(--gray-400);
+    font-size: 0.85rem;
+    margin-top: var(--space-2);
+    font-style: italic;
+}
+
+/* ===== SKILLS SECTIONS ===== */
+.early-skills,
+.skills-developed,
+.leadership-skills,
+.adaptation-skills,
+.technical-skills {
+    margin-top: var(--space-5);
+    padding-top: var(--space-4);
+    border-top: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+.early-skills h4,
+.skills-developed h4,
+.leadership-skills h4,
+.adaptation-skills h4,
+.technical-skills h4 {
+    color: var(--secondary-color);
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: var(--space-3);
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+}
+
+.skill-tag {
+    background: rgba(59, 130, 246, 0.15);
+    color: var(--primary-color);
+    padding: var(--space-1) var(--space-3);
+    border-radius: var(--radius-md);
+    font-size: 0.8rem;
+    font-weight: 500;
+    border: 1px solid rgba(59, 130, 246, 0.25);
+    transition: var(--transition);
+}
+
+.skill-tag:hover {
+    background: rgba(59, 130, 246, 0.25);
+    color: var(--white);
+    transform: translateY(-1px);
+}
+
+/* ===== TECHNICAL SKILLS SECTION ===== */
+.skill-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--space-4);
+    margin-top: var(--space-4);
+}
+
+.skill-category {
+    background: rgba(139, 92, 246, 0.05);
+    padding: var(--space-4);
+    border-radius: var(--radius-lg);
+    border: 1px solid rgba(139, 92, 246, 0.2);
+}
+
+.skill-category h5 {
+    color: var(--data-color);
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: var(--space-2);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* ===== ACHIEVEMENTS SECTION ===== */
+.achievements,
+.academic-achievements {
+    margin-top: var(--space-5);
+    padding-top: var(--space-4);
+    border-top: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+.achievements h4,
+.academic-achievements h4 {
+    color: var(--accent-color);
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: var(--space-3);
+}
+
+.achievements ul,
+.academic-achievements ul {
+    list-style: none;
+    padding: 0;
+}
+
+.achievements li,
+.academic-achievements li {
+    color: var(--gray-300);
+    margin-bottom: var(--space-2);
+    padding-left: var(--space-4);
+    position: relative;
+    line-height: 1.6;
+}
+
+.achievements li::before,
+.academic-achievements li::before {
+    content: '✨';
+    position: absolute;
+    left: 0;
+    color: var(--accent-color);
+}
+
+/* ===== SKILLS EVOLUTION SECTION ===== */
+.skills-evolution-section {
+    padding: var(--space-20) 0;
+    background: var(--bg-secondary);
+    border-top: 1px solid rgba(59, 130, 246, 0.1);
+}
+
+.skills-timeline {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--space-6);
+    margin-top: var(--space-12);
+}
+
+.skill-evolution-item {
+    background: var(--bg-card);
+    padding: var(--space-6);
+    border-radius: var(--radius-xl);
+    border: 1px solid rgba(59, 130, 246, 0.2);
+    backdrop-filter: blur(10px);
+    transition: var(--transition-slow);
+}
+
+.skill-evolution-item:hover {
+    transform: translateY(-5px);
+    border-color: rgba(59, 130, 246, 0.4);
+    box-shadow: var(--shadow-lg);
+}
+
+.evolution-year {
+    background: var(--primary-color);
+    color: var(--white);
+    padding: var(--space-2) var(--space-4);
+    border-radius: var(--radius-lg);
+    font-weight: 600;
+    font-family: 'JetBrains Mono', monospace;
+    display: inline-block;
+    margin-bottom: var(--space-4);
+}
+
+.evolution-skills h4 {
+    color: var(--white);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: var(--space-4);
+}
+
+.skill-bars {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+}
+
+.skill-bar-item {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+}
+
+.skill-bar-item span {
+    color: var(--gray-300);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.skill-bar {
+    height: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+}
+
+.skill-progress {
+    height: 100%;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    border-radius: var(--radius-sm);
+    transition: width 1.5s ease-out;
+    width: 0;
+}
+
+/* ===== FUTURE GOALS SECTION ===== */
+.future-goals-section {
+    padding: var(--space-20) 0;
+    background: var(--bg-secondary);
+    border-top: 1px solid rgba(59, 130, 246, 0.1);
+}
+
+.goals-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--space-8);
+    margin-top: var(--space-12);
+}
+
+.goal-item {
+    background: var(--bg-card);
+    padding: var(--space-8);
+    border-radius: var(--radius-xl);
+    border: 1px solid rgba(59, 130, 246, 0.2);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    transition: var(--transition-slow);
+    position: relative;
+    overflow: hidden;
+}
+
+.goal-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--primary-color), transparent);
+    transition: left 0.8s ease;
+}
+
+.goal-item:hover::before {
+    left: 100%;
+}
+
+.goal-item:hover {
+    transform: translateY(-8px);
+    border-color: rgba(59, 130, 246, 0.4);
+    box-shadow: var(--shadow-xl);
+}
+
+.goal-icon {
+    font-size: 3rem;
+    margin-bottom: var(--space-4);
+    display: block;
+}
+
+.goal-item h3 {
+    color: var(--white);
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: var(--space-3);
+}
+
+.goal-item p {
+    color: var(--gray-300);
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 1024px) {
+    .journey-intro h1 {
+        font-size: 3.2rem;
+    }
+    
+    .timeline::before {
+        left: 30px;
+    }
+    
+    .timeline-marker {
+        left: 30px;
+    }
+    
+    .timeline-item:nth-child(odd) .timeline-content,
+    .timeline-item:nth-child(even) .timeline-content {
+        flex-direction: column;
+        text-align: left;
+    }
+    
+    .timeline-item:nth-child(odd) .timeline-text,
+    .timeline-item:nth-child(even) .timeline-text {
+        padding-left: 80px;
+        padding-right: var(--space-6);
+        margin-bottom: var(--space-4);
+    }
+    
+    .timeline-image {
+        flex: none;
+        margin-left: 80px;
+    }
+    
+    .timeline-image img {
+        max-width: 300px;
+    }
+    
+    .skills-timeline {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .goals-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .journey-header {
+        padding: var(--space-16) 0 var(--space-12) 0;
+        margin-top: 75px;
+    }
+    
+    .journey-intro h1 {
+        font-size: 2.8rem;
+    }
+    
+    .journey-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .journey-stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-4);
+    }
+    
+    .timeline::before {
+        left: 20px;
+    }
+    
+    .timeline-marker {
+        left: 20px;
+    }
+    
+    .marker-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+    
+    .timeline-text {
+        padding-left: 60px;
+        padding-right: var(--space-4);
+    }
+    
+    .timeline-image {
+        margin-left: 60px;
+    }
+    
+    .timeline-image img {
+        height: 150px;
+    }
+    
+    .skill-categories {
+        grid-template-columns: 1fr;
+    }
+    
+    .skills-timeline {
+        grid-template-columns: 1fr;
+    }
+    
+    .goals-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .journey-header {
+        padding: var(--space-12) 0 var(--space-10) 0;
+        margin-top: 70px;
+    }
+    
+    .journey-intro h1 {
+        font-size: 2.2rem;
+    }
+    
+    .journey-subtitle {
+        font-size: 1rem;
+    }
+    
+    .journey-stats {
+        grid-template-columns: 1fr;
+        gap: var(--space-3);
+    }
+    
+    .timeline::before {
+        left: 15px;
+    }
+    
+    .timeline-marker {
+        left: 15px;
+    }
+    
+    .timeline-text {
+        padding-left: 50px;
+        padding-right: var(--space-3);
+        padding-top: var(--space-4);
+        padding-bottom: var(--space-4);
+    }
+    
+    .timeline-image {
+        margin-left: 50px;
+    }
+    
+    .timeline-image img {
+        height: 120px;
+    }
+    
+    .timeline-text h3 {
+        font-size: 1.4rem;
+    }
+    
+    .goal-item {
+        padding: var(--space-6);
+    }
+    
+    .goal-icon {
+        font-size: 2.5rem;
+    }
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes timelineSlideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes skillBarFill {
+    from {
+        width: 0;
+    }
+    to {
+        width: var(--target-width);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulseGlow {
+    0%, 100% {
+        box-shadow: 0 0 20px rgba(59, 130, 246, 0.4);
+    }
+    50% {
+        box-shadow: 0 0 30px rgba(59, 130, 246, 0.6);
+    }
+}
+
+.marker-icon {
+    animation: pulseGlow 3s ease-in-out infinite;
+}
+
+/* ===== ACCESSIBILITY IMPROVEMENTS ===== */
+@media (prefers-reduced-motion: reduce) {
+    .timeline-item,
+    .skill-evolution-item,
+    .goal-item,
+    .marker-icon {
+        transition: none !important;
+        animation: none !important;
+    }
+    
+    .timeline-item {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===== FOCUS STATES ===== */
+.timeline-text:focus-within,
+.skill-evolution-item:focus-within,
+.goal-item:focus-within {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+/* ===== PRINT STYLES ===== */
+@media print {
+    .journey-header,
+    .skills-evolution-section,
+    .future-goals-section {
+        background: white !important;
+        color: black !important;
+    }
+    
+    .timeline::before {
+        background: #333 !important;
+    }
+    
+    .timeline-text,
+    .skill-evolution-item,
+    .goal-item {
+        border: 1px solid #ddd !important;
+        background: #f9f9f9 !important;
+        break-inside: avoid;
+    }
+    
+    .timeline-text h3,
+    .goal-item h3 {
+        color: black !important;
+    }
+    
+    .story-details p,
+    .goal-item p {
+        color: #333 !important;
+    }
+}
+
+/* ===== LOADING STATES ===== */
+.timeline-loading {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.timeline-loading::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    margin: -20px 0 0 -20px;
+    border: 3px solid var(--primary-color);
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* ===== END OF JOURNEY CSS ===== */
