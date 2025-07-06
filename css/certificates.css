@@ -180,6 +180,7 @@
     height: 240px;
     overflow: hidden;
     position: relative;
+    object-position: top
 }
 
 .certificate-image img {
@@ -187,6 +188,7 @@
     height: 100%;
     object-fit: cover;
     transition: var(--transition-slow);
+    object-position: top
 }
 
 .certificate-card:hover .certificate-image img {
