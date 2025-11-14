@@ -13,7 +13,7 @@ function initializeProjects() {
     initSearchFunctionality();
     addEventListeners();
     
-    console.log('✅ Projects page initialized successfully');
+    console.log('Projects page initialized successfully');
 }
 // ===== NAVIGATION =====
 function initNavigation() {
@@ -842,7 +842,7 @@ setTimeout(() => {
     `;
     document.head.appendChild(rippleStyles);
     
-    console.log('🚀 All projects page features loaded successfully!');
+    console.log('All projects page features loaded successfully');
 }, 300);
 
 // ===== ERROR HANDLING =====

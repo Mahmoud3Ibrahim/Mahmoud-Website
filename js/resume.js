@@ -12,7 +12,7 @@ function initializeResume() {
     initPrintFunctionality();
     addEventListeners();
     
-    console.log('✅ Resume page initialized successfully');
+    console.log('Resume page initialized successfully');
 }
 
 // ===== NAVIGATION =====
@@ -518,5 +518,5 @@ setTimeout(() => {
     initContactInteractions();
     initProgressIndicator();
     
-    console.log('🚀 Resume page fully loaded with all features!');
+    console.log('Resume page fully loaded with all features');
 }, 500);

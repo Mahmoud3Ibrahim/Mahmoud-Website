@@ -14,7 +14,7 @@ function initializeContact() {
     initScrollEffects();
     addEventListeners();
     
-    console.log('✅ Contact page initialized successfully');
+    console.log('Contact page initialized successfully');
 }
 // ===== NAVIGATION =====
 function initNavigation() {
@@ -60,7 +60,7 @@ function initNavigation() {
 function initEmailJS() {
     // Initialize EmailJS
     emailjs.init(EMAIL_CONFIG.publicKey);
-    console.log('📧 EmailJS initialized');
+    console.log('EmailJS initialized');
 }
 
 // ===== CONTACT FORM =====
@@ -503,7 +503,7 @@ function trackFormSubmission() {
         });
     }
     
-    console.log('📊 Form submission tracked');
+    console.log('Form submission tracked');
 }
 
 function trackContactMethodClick(method) {
@@ -515,7 +515,7 @@ function trackContactMethodClick(method) {
         });
     }
     
-    console.log(`📊 Contact method clicked: ${method}`);
+    console.log(`Contact method clicked: ${method}`);
 }
 
 // ===== NOTIFICATION SYSTEM =====
@@ -603,7 +603,7 @@ function showNotification(message, type = 'info') {
 
 function getNotificationIcon(type) {
     const icons = {
-        success: '✅',
+        success: 'Success',
         error: '❌',
         warning: '⚠️',
         info: 'ℹ️'
@@ -925,7 +925,7 @@ setTimeout(() => {
     `;
     document.head.appendChild(animationStyles);
     
-    console.log('🚀 All contact page features loaded successfully!');
+    console.log('All contact page features loaded successfully');
 }, 300);
 
 // ===== EXPOSE GLOBAL FUNCTIONS =====

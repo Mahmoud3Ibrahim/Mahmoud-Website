@@ -1,5 +1,3 @@
-// ===== CORRECTED PORTFOLIO JAVASCRIPT =====
-
 document.addEventListener('DOMContentLoaded', function() {
     initializePortfolio();
 });
@@ -11,7 +9,7 @@ function initializePortfolio() {
     initSmoothScroll();
     addEventListeners();
     
-    console.log('✅ Data Analytics Portfolio initialized successfully');
+    console.log('Data Analytics Portfolio initialized successfully');
 }
 
 // ===== NAVIGATION =====
@@ -599,7 +597,7 @@ window.addEventListener('error', (e) => {
 
 // ===== CLEANUP =====
 window.addEventListener('beforeunload', () => {
-    console.log('🧹 Cleaning up portfolio resources...');
+    // Cleanup
 });
 
 // ===== INITIALIZE EVERYTHING =====
@@ -616,6 +614,6 @@ setTimeout(() => {
         document.body.style.opacity = '1';
     }, 100);
     
-    console.log('🚀 All portfolio features loaded successfully!');
+    console.log('All portfolio features loaded successfully');
 }, 300);
 

@@ -13,7 +13,7 @@ function initializeCertificates() {
     initProgressBars();
     addEventListeners();
     
-    console.log('✅ Certificates page initialized successfully');
+    console.log('Certificates page initialized successfully');
 }
 // ===== NAVIGATION =====
 function initNavigation() {
@@ -797,7 +797,7 @@ setTimeout(() => {
     `;
     document.head.appendChild(animationStyles);
     
-    console.log('🚀 All certificates page features loaded successfully!');
+    console.log('All certificates page features loaded successfully');
 }, 300);
 
 // ===== EXPOSE GLOBAL FUNCTIONS =====

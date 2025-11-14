@@ -67,6 +67,13 @@ html {
     scroll-behavior: smooth;
 }
 
+@supports (scrollbar-width: thin) {
+    html {
+        scrollbar-width: thin;
+        scrollbar-color: var(--primary-color) var(--gray-900);
+    }
+}
+
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     line-height: 1.6;
@@ -126,11 +133,18 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    background: var(--bg-primary);
-    backdrop-filter: blur(20px);
+    background: rgba(0, 0, 0, 0.85);
     border-bottom: 1px solid rgba(59, 130, 246, 0.2);
     z-index: 1000;
     transition: var(--transition);
+}
+
+@supports (backdrop-filter: blur(20px)) {
+    .navbar {
+        background: rgba(0, 0, 0, 0.6);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+    }
 }
 
 .nav-container {
@@ -338,11 +352,18 @@ body {
 
 .stat-item {
     text-align: center;
-    background: var(--bg-card);
+    background: rgba(0, 0, 0, 0.6);
     padding: var(--space-4);
     border-radius: var(--radius-lg);
     border: 1px solid rgba(59, 130, 246, 0.2);
-    backdrop-filter: blur(10px);
+}
+
+@supports (backdrop-filter: blur(10px)) {
+    .stat-item {
+        background: rgba(0, 0, 0, 0.4);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+    }
 }
 
 .stat-number {
@@ -455,12 +476,20 @@ body {
     display: flex;
     align-items: center;
     gap: 3px;
-    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.6);
     animation: floatFast 6s ease-in-out infinite;
     min-width: 65px;
     max-width: 85px;
     justify-content: center;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+@supports (backdrop-filter: blur(10px)) {
+    .tech-item {
+        background: rgba(0, 0, 0, 0.4);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+    }
 }
 
 .tech-item i {
@@ -647,9 +676,18 @@ body {
 .projects-section,
 .experience-section {
     padding: var(--space-20) 0;
-    background: var(--bg-secondary);
-    backdrop-filter: blur(15px);
+    background: rgba(0, 0, 0, 0.75);
     border-top: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+@supports (backdrop-filter: blur(15px)) {
+    .data-skills-section,
+    .projects-section,
+    .experience-section {
+        background: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+    }
 }
 
 .section-header {
@@ -679,12 +717,19 @@ body {
 }
 
 .skill-category {
-    background: var(--bg-card);
+    background: rgba(0, 0, 0, 0.6);
     padding: var(--space-8);
     border-radius: var(--radius-xl);
     border: 1px solid rgba(59, 130, 246, 0.2);
-    backdrop-filter: blur(10px);
     transition: var(--transition-slow);
+}
+
+@supports (backdrop-filter: blur(10px)) {
+    .skill-category {
+        background: rgba(0, 0, 0, 0.4);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+    }
 }
 
 .skill-category:hover {
@@ -694,9 +739,20 @@ body {
 }
 
 .category-icon {
-    font-size: 3rem;
+    font-size: 2rem;
+    font-weight: 700;
     text-align: center;
     margin-bottom: var(--space-4);
+    color: var(--primary-color);
+    font-family: 'JetBrains Mono', monospace;
+    letter-spacing: 2px;
+    padding: var(--space-3);
+    background: rgba(59, 130, 246, 0.1);
+    border-radius: var(--radius-md);
+    border: 1px solid rgba(59, 130, 246, 0.3);
+    display: inline-block;
+    width: 80px;
+    margin: 0 auto var(--space-4);
 }
 
 .skill-category h3 {
@@ -863,8 +919,19 @@ body {
 }
 
 .experience-icon {
-    font-size: 3rem;
+    font-size: 1.8rem;
+    font-weight: 700;
     margin-bottom: var(--space-4);
+    color: var(--primary-color);
+    font-family: 'JetBrains Mono', monospace;
+    letter-spacing: 2px;
+    padding: var(--space-3);
+    background: rgba(59, 130, 246, 0.1);
+    border-radius: var(--radius-md);
+    border: 1px solid rgba(59, 130, 246, 0.3);
+    display: inline-block;
+    width: 70px;
+    margin: 0 auto var(--space-4);
 }
 
 .experience-card h3 {
@@ -1243,11 +1310,7 @@ body {
     background: var(--gray-900);
 }
 
-/* Firefox scrollbar styling */
-html {
-    scrollbar-width: thin;
-    scrollbar-color: var(--primary-color) var(--gray-900);
-}
+/* Firefox scrollbar styling - moved to top level */
 
 /* ===== SELECTION STYLING ===== */
 ::selection {
@@ -1633,11 +1696,7 @@ html {
     background: var(--gray-900);
 }
 
-/* Firefox scrollbar styling */
-html {
-    scrollbar-width: thin;
-    scrollbar-color: var(--primary-color) var(--gray-900);
-}
+/* Firefox scrollbar styling - moved to top level */
 
 /* ===== SELECTION STYLING ===== */
 ::selection {
@@ -1749,13 +1808,20 @@ html {
         left: -100%;
         width: 100%;
         height: calc(100vh - 75px);
-        background: var(--bg-primary);
-        backdrop-filter: blur(20px);
+        background: rgba(0, 0, 0, 0.95);
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
         padding: var(--space-8) 0;
         transition: left 0.3s ease;
+    }
+
+    @supports (backdrop-filter: blur(20px)) {
+        .nav-menu {
+            background: rgba(0, 0, 0, 0.85);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
     }
     
     .nav-menu.active {
@@ -2038,11 +2104,7 @@ html {
     background: var(--gray-900);
 }
 
-/* Firefox scrollbar styling */
-html {
-    scrollbar-width: thin;
-    scrollbar-color: var(--primary-color) var(--gray-900);
-}
+/* Firefox scrollbar styling - moved to top level */
 
 /* ===== SELECTION STYLING ===== */
 ::selection {
@@ -2130,7 +2192,14 @@ html {
     /* إصلاح القائمة المنسدلة */
     .nav-menu {
         background: rgba(0, 0, 0, 0.95);
-        backdrop-filter: blur(20px);
+    }
+
+    @supports (backdrop-filter: blur(20px)) {
+        .nav-menu {
+            background: rgba(0, 0, 0, 0.85);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
     }
     
     .nav-link {
@@ -2231,13 +2300,20 @@ html {
 
 /* ===== CERTIFICATE CARDS ===== */
 .certificate-card-home {
-    background: var(--bg-card);
+    background: rgba(0, 0, 0, 0.6);
     border-radius: var(--radius-xl);
     overflow: hidden;
     border: 1px solid rgba(16, 185, 129, 0.2);
     transition: var(--transition-slow);
     position: relative;
-    backdrop-filter: blur(10px);
+}
+
+@supports (backdrop-filter: blur(10px)) {
+    .certificate-card-home {
+        background: rgba(0, 0, 0, 0.4);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+    }
 }
 
 .certificate-card-home.featured {

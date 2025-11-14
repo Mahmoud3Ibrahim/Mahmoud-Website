@@ -13,7 +13,7 @@ function initializeJourney() {
     initStatsCounter();
     addEventListeners();
     
-    console.log('✅ Journey page initialized successfully');
+    console.log('Journey page initialized successfully');
 }
 // ===== NAVIGATION =====
 function initNavigation() {
@@ -882,7 +882,7 @@ setTimeout(() => {
     `;
     document.head.appendChild(animationStyles);
     
-    console.log('🚀 All journey page features loaded successfully!');
+    console.log('All journey page features loaded successfully');
 }, 500);
 
 // ===== ERROR HANDLING =====
